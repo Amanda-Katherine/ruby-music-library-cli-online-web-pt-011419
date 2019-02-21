@@ -1,12 +1,23 @@
+require 'pry'
+
 class Artist
 
-  attr_accessor :name, :songs
+  extend Concerns::Findable
+
+  attr_accessor :name
 
   @@all = []
 
   def initialize(name)
     @name = name
     @songs = []
+  end
+
+  def genres
+    genres = self.songs.collect do |song|
+      song.genre
+    end
+    genres.uniq
   end
 
   def add_song(song)
