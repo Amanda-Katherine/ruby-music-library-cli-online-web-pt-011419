@@ -25,21 +25,18 @@ class MusicLibraryController
   end
 
   def list_songs
-    Song.all.sort_by! { |song| song.name}
-    Song.all.each_with_index do |song, index|
+    Song.all.sort_by! { |song| song.name}.each_with_index do |song, index|
       puts "#{index + 1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
     end
   end
 
 
   def list_artists
-    Artist.all.sort_by! { |artist| artist.name}
-    Artist.all.each_with_index { |artist, index| puts "#{index + 1}. #{artist.name}"}
+    Artist.all.sort_by! { |artist| artist.name}.each_with_index { |artist, index| puts "#{index + 1}. #{artist.name}"}
   end
 
   def list_genres
-    Genre.all.sort_by! { |genre| genre.name}
-    Genre.all.each_with_index { |genre, index| puts "#{index + 1}. #{genre.name}"}
+    Genre.all.sort_by! { |genre| genre.name}.each_with_index { |genre, index| puts "#{index + 1}. #{genre.name}"}
   end
 
   def list_songs_by_artist
