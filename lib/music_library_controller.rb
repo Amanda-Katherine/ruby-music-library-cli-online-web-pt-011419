@@ -72,8 +72,6 @@ class MusicLibraryController
     Song.all.each_with_index do |song, index|
       if index == input
         puts song
-      else
-        puts "Can't Play That One."
       end
     end
   end
