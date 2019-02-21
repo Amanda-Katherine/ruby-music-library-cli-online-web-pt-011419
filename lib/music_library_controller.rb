@@ -70,7 +70,7 @@ class MusicLibraryController
 
     Song.all.sort_by! { |song| song.name}
     Song.all.each_with_index do |song, index|
-      if index == input
+      if index + 1 == input
         puts song
       end
     end
