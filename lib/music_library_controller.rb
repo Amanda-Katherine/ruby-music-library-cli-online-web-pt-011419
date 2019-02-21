@@ -64,6 +64,10 @@ class MusicLibraryController
     end
   end
 
+  def play_song
+
+  end
+
   # def play_song
   #   list_songs
   #   puts "Which song number would you like to play?"
@@ -77,6 +81,4 @@ class MusicLibraryController
   # end
 
     #if input.between?(0, Song.all.length - 1)
-
-    puts list_songs
 end
