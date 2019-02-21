@@ -78,5 +78,5 @@ class MusicLibraryController
 
     #if input.between?(0, Song.all.length - 1)
 
-
+    puts list_songs
 end
