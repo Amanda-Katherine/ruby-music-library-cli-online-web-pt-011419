@@ -71,7 +71,7 @@ class MusicLibraryController
     Song.all.sort_by! { |song| song.name}
     Song.all.each_with_index do |song, index|
       if index + 1 == input
-        puts song
+        puts "Playing #{song.name} by #{song.artist.name}"
       end
     end
   end
