@@ -32,8 +32,10 @@ class MusicLibraryController
       list_songs_by_genre
     when "play song"
       play_song
+    when "exit"
+      break
     else
-      "You gotta pick something!"
+      self.call
     end
   end
 
