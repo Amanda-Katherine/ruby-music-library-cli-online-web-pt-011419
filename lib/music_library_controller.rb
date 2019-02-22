@@ -34,7 +34,7 @@ class MusicLibraryController
     when "list genre"
       list_songs_by_genre
     when "play song"
-      play_song 
+      play_song
     else
       "You gotta pick something!"
     end
