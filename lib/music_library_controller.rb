@@ -37,7 +37,6 @@ class MusicLibraryController
       when "exit"
         puts "Smell ya later"
       else
-        puts "Hey, that's not an option!"
       end
     end
   end
