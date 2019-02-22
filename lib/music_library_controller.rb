@@ -35,8 +35,6 @@ class MusicLibraryController
       when "play song"
         play_song
       when "exit"
-        puts "Smell ya later"
-      else
       end
     end
   end
